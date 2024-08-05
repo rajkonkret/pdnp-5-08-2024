@@ -37,3 +37,34 @@ print(tekst_zamiana.replace("dobry", ""))  # "Witaj  Świecie"
 print(tekst.removesuffix("Świecie").strip())  # "Witaj" strip() - usunie białe znaki np.: spacje końcowe i początkowe
 
 print(tekst[4])  # wypisanie znaku o indeksie 4 -> "j"
+
+# kodowanie znaków
+encode_s = tekst.encode('utf-8')
+print(encode_s)  # b'Witaj \xc5\x9awiecie'
+# \x wartość bajtu w postaci szesnastkowej
+# \xc5 - dziesiętnie 197
+print(type(encode_s))  # <class 'bytes'>
+print(encode_s.decode('utf-8'))  # Witaj Świecie
+
+imie = "Radek"
+# f - fstring, tekst sformatowany
+tekst_format = f"\tMam na imię {imie}\n i lubię pythona.\b"
+print(tekst_format)
+#    Mam na imię Radek
+# i lubię pythona
+# \t tabulator
+# \n nowa linia
+# \b backspace - usunięcie znaku
+
+starszy = "Witaj %s!"  # %s - stringa
+print(starszy % imie)  # Witaj Radek!
+
+print("Witaj {}!".format(imie))  # Witaj Radek!
+
+print("Witaj", imie)  # Witaj Radek
+
+# tekst wilolinijkowy
+print("""Tekst
+    wielolinijkowy""")
+# "Tekst
+#     wielolinijkowy"
