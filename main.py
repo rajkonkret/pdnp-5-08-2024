@@ -17,3 +17,7 @@ if __name__ == '__main__':
 # dwa razy shift
 # wheel - powiększanie czcionki
 # theme - zmiana kolorków
+# programy pythonowe to pliki tekstowe z roszerzenie .py
+# python nazwa_pliku.py - uruchamia program w terminalu
+# ctrl shift f10 - uruchomienie bieżącego programu
+# ctrl alt l - formatowanie kodu zgodnie z zasadami PEP8
