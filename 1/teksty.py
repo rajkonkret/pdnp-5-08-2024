@@ -50,7 +50,7 @@ imie = "Radek"
 # f - fstring, tekst sformatowany
 tekst_format = f"\tMam na imię {imie}\n i lubię pythona.\b"
 print(tekst_format)
-#    Mam na imię Radek
+#    Mam na imię Radek  -> 	Mam na imię {imie}
 # i lubię pythona
 # \t tabulator
 # \n nowa linia
