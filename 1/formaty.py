@@ -57,7 +57,9 @@ print(f"Nasza duża liczba {liczba:,}".replace(",", "."))  # Nasza duża liczba 
 # Nasza duża liczba 123.456.789.123
 
 liczba_2 = 123_456_789_123
+liczba_3 = 123_456_789_123.90
 # 15_000_000
 # 15000000
 print(type(liczba_2))  # <class 'int'>
 print(liczba_2)  # 123456789123
+print(liczba_3)  # 123456789123.9
