@@ -46,9 +46,9 @@ print(dict_small)  # {'x': 2, 'y': 3, 'z': 5, 'k': 8}
 # ctrl alt l
 
 # input() - pobiera dane od użytkownika
-tekst = input("Podaj imię")
-print("Masz na imię", tekst)
-print(type(tekst))
+# tekst = input("Podaj imię")
+# print("Masz na imię", tekst)
+# print(type(tekst))
 # Podaj imięRadek
 # Masz na imię Radek
 # <class 'str'>
@@ -59,9 +59,9 @@ print(type(tekst))
 # aplikacja kalkulator
 # pobrać dwie liczby od użytkownika 2 x input
 # wyświetlić wynik działania (+) print()
-a = input("Podaj pierwszą liczbę")  # str
-b = float(input("Podaj drugą liczbę"))
-print("Wynik dodawania", int(a) + b)
+# a = input("Podaj pierwszą liczbę")  # str
+# b = float(input("Podaj drugą liczbę"))
+# print("Wynik dodawania", int(a) + b)
 # Podaj pierwszą liczbę>? 5
 # Podaj drugą liczbę>? 6
 # Wynik dodawania 11.0
@@ -72,3 +72,13 @@ print("Wynik dodawania", int(a) + b)
 # wyswietlicz kluzce (słowka, które umiemy prztłumaczyć)
 # pobrać słówko do przetłumaczenia (klucz)
 # wyświetle wartośc dla tego klucza
+# print(dictionary.keys())  # dict_keys(['imie', 'wiek'])
+pol_ang = {'kot': 'cat', 'pies': 'dog'}
+print("Znane nam słowka", pol_ang.keys())
+odp = input("podaj słowko do przetłumaczenia")
+print(pol_ang[odp.lower().replace(" ", "")])
+print(pol_ang.get(odp.lower().replace(), 'nie mo'))
+# Znane nam słowka dict_keys(['kot', 'pies'])
+# podaj słowko do przetłumaczenia Pi es
+# dog
+# nie mo
