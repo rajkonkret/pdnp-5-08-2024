@@ -111,7 +111,7 @@ Dla czasu:
 %S: Sekundy z zerem wiodącym, np. "00" do "59".
 %f: Mikrosekundy, np. "000000" do "999999".
 
-spam += 1    spam = spam + 1
+spam += 1    spam = spam + 1  punkty = punkty + 1
 spam -= 1    spam = spam - 1
 spam *= 1    spam = spam * 1
 spam /= 1    spam = spam / 1
