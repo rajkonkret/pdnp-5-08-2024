@@ -77,7 +77,7 @@ pol_ang = {'kot': 'cat', 'pies': 'dog'}
 print("Znane nam słowka", pol_ang.keys())
 odp = input("podaj słowko do przetłumaczenia")
 print(pol_ang[odp.lower().replace(" ", "")])
-print(pol_ang.get(odp.lower().replace(), 'nie mo'))
+print(pol_ang.get(odp.lower().replace(" ", ""), 'nie mo'))
 # Znane nam słowka dict_keys(['kot', 'pies'])
 # podaj słowko do przetłumaczenia Pi es
 # dog
