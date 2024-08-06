@@ -133,6 +133,6 @@ print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.'] rozpakowanie sekwencji
 lista2 = [tekst]
 print(lista2)  # ['Pyth on.']
 
-krotka = tuple(lista_copy)
+krotka = tuple(lista_copy)  # tuple()  - rzutowanie na krotkę (tuplę)
 print(type(krotka))  # <class 'tuple'>
 print(krotka)  # ('Radek', 'Karol', 'Tomek')
