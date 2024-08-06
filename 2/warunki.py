@@ -88,7 +88,7 @@ print(lista_b)
 # wyswietlic wynik
 punkty = 0
 odp = input("Podaj datę Chrztu Polski")  # zwraca str
-if odp == '966':
+if odp == '966':  # porównuje z wartościa typu str
     print("Brawo")
     punkty += 1  # punkty = punkty + 1
 else:
