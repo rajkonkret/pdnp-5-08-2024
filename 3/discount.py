@@ -40,4 +40,26 @@ products = [
 # products jest typu lista
 print(type(products))  # <class 'list'>
 # wyciągnięcie pierwszego elemntu z listy
-print()
+print(products[0])  # {'sku': 1, 'exp_date': datetime.date(2024, 8, 7), 'price': 100} -> słownik
+# wypisanie informacji ze słownika po kluczu exp_date
+print(products[0]['exp_date'])  # 2024-08-07
+
+# bierzemy wszystkie elementy po kolei
+for i in products:
+    # print(i)
+    # print(type(i))
+    #     if i['exp_date'] == today:
+    #         i['price'] *= 0.8  # p = p * 0.8 20% dyskount
+    #         print(f"""Price for sku {i['sku']}
+    # is now {i['price']}""")
+    if i['exp_date'] != today:
+        continue  # wraca na początek pętli, bierze kolejny element z kolekcji
+    i['price'] *= 0.8  # p = p * 0.8 20% dyskount
+    print(f"""Price for sku {i['sku']}
+is now {i['price']}""")
+# Price for sku 1
+# is now 80.0
+# Price for sku 4
+# is now 40.0
+# Price for sku 5
+# is now 116.79200000000002
