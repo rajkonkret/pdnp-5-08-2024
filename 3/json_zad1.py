@@ -51,3 +51,6 @@ print(type(dict_json))  # <class 'dict'>
 # {"age": 40, "czy_pali": null, "name": "Radek"}
 # {'age': 40, 'czy_pali': None, 'name': 'Radek'}
 # ctrl alt l
+
+for key in ('age', 'czy_pali'):
+    print(key)
