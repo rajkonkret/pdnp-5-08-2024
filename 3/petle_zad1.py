@@ -79,3 +79,81 @@ for i in range(10, 0, -2):  # krok w tył
 # 6
 # 4
 # 2
+
+for i in range(-10, 0):
+    print(i)
+    # -10
+    # -9
+    # -8
+    # -7
+    # -6
+    # -5
+    # -4
+    # -3
+    # -2
+    # -1
+
+for c in lista3:
+    if c == 2:  # blok gdy warunek spełniony
+        c += 1  # c = c + 1
+        print("Tylko dla c = 2")
+        print(c)
+    print("Przy każdym elemencie pętli", c)
+# Przy każdym elemencie pętli 0
+# Tylko dla c = 2
+# Przy każdym elemencie pętli 3
+# Przy każdym elemencie pętli 4
+# Przy każdym elemencie pętli 6
+# Przy każdym elemencie pętli 8
+# spam += 1    spam = spam + 1  punkty = punkty + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
+# spam //= 1    spam = spam // 1
+# spam **= 1    spam = spam ** 1
+
+imiona = ["Radek", 'Tomek', 'Zenek', "Ania"]
+print(imiona)
+print(type(imiona))
+# ['Radek', 'Tomek', 'Zenek', 'Ania']
+# <class 'list'>
+
+for p in imiona:
+    print(p)
+# Radek
+# Tomek
+# Zenek
+# Ania
+
+# wypisać elementy z listy z indeksem czyli: 0 Radek
+for i in range(len(imiona)):  # range(4) 0123
+    print(i, imiona[i])
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+
+for p in imiona:
+    print(imiona.index(p), p)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+
+# enumerate() - zwraca element kolekcji i jego pozycje
+for p in enumerate(imiona):
+    print(p)
+# (0, 'Radek')
+# (1, 'Tomek')
+# (2, 'Zenek')
+# (3, 'Ania')
+a, b = (0, 'Radek')  # rozpakowanie krotki
+print(a, b)  # 0 Radek
+# wstawienie rozpakowania krotki od razu w petle zmienne i,o przyjmą kolejne elementy z krotki
+for i, o in enumerate(imiona):
+    print(i, o)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
