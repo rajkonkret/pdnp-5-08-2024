@@ -43,7 +43,7 @@ dict_list = [
     {'name': 'Radek', 'branch': 'Coe', 'year': 2, 'cgpa': '9.1'},
     {'name': 'Radek', 'branch': 'Coe', 'year': 2, 'cgpa': '9.1'},
 ]
-
+print(dict_list)
 filename_3 = 'records_3.csv'
 with open(filename_3, 'w', newline='') as file:
     csvwriter = csv.DictWriter(file, fieldnames=fields, delimiter=";")
