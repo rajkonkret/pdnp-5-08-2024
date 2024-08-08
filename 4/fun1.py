@@ -3,6 +3,7 @@
 # w miejscu deklaracji funkcja się nie wykonuje
 # żeby funkcja się wywołała trzeba ją uruchomić
 
+# funkcje nie zwracające wyniku
 a = 6
 b = 8
 
