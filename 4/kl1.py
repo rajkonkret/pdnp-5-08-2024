@@ -55,3 +55,15 @@ print(cz1.imie)
 # k
 # 28
 # Anna
+
+# stwórzcie obiekt innej plci
+cz2 = Human()
+cz2.imie = "Radek"
+cz2.wiek = 29
+cz2.plec = "m"
+print("Plec", cz2.plec)
+print("Wiek", cz2.wiek)
+print("Imie", cz2.imie)
+# Plec m
+# Wiek 29
+# Imie Radek
