@@ -21,6 +21,13 @@ class Human:
     wiek = None
     plec = "k"
 
+    # self - obiekt, który wywołuje
+    def ruszaj(self):
+        if self.plec == "k":
+            print("Ruszyłam w drogę")
+        else:
+            print("Ruszyłem w drogę")
+
 
 # tworzenie obiektu klasy
 cz1 = Human()
@@ -67,3 +74,7 @@ print("Imie", cz2.imie)
 # Plec m
 # Wiek 29
 # Imie Radek
+cz1.ruszaj()
+cz2.ruszaj()
+# Ruszyłam w drogę
+# Ruszyłem w drogę
