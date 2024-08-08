@@ -54,3 +54,4 @@ print(type(dict_json))  # <class 'dict'>
 
 for key in ('age', 'czy_pali'):
     print(key)
+# Tabnine - sztuczna inteligencja w programowaniu
