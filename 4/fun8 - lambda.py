@@ -67,6 +67,9 @@ print(l3)  # [1, 2, 3, 10]
 print(f"Zastosowanie filter(): {list(filter(lambda x: x < 20, lista))}")
 # Zastosowanie filter(): [1, 2, 3, 10]
 # wyfiltrowac dane dla x > 100
-print(f"Zastosowanie filter(): {list(filter(lambda x: x < 20, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 100, lista))}")
 # wyfiltrowac dane dla x > 20 i x  < 300
-print(f"Zastosowanie filter(): {list(filter(lambda x: x < 20, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 20 and x < 300, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: 20 < x < 300, lista))}")
+# Zastosowanie filter(): [50, 70, 200]
+# Zastosowanie filter(): [50, 70, 200]
