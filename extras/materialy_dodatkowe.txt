@@ -121,3 +121,14 @@ spam **= 1    spam = spam ** 1
 
 https://www.hackerrank.com/domains/python
 https://www.w3schools.com/python/default.asp
+
+# wyeksportowanie ustawien srodowiska
+pip freeze > requirements.txt
+pip install -r requirements.txt
+pip list - lista zainstalowanych bibliotek
+
+# plik exe
+pip install pyinstaller
+pyinstaller --onefile --windowed 5/okno1.py  - linux
+pyinstaller --onefile --noconsole 5\okno1.py  - windows
+
