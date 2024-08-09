@@ -10,7 +10,7 @@
 # metody (funkcje)
 
 # Deklaracja klasy
-# PEP8 zaleca nawy kals z dużej litery
+# PEP8 zaleca nazwy klas z dużej litery
 # komentarz wielolinijkowy w kalsie (funkcji) jest traktowany jako dokumentacja
 class Human:
     """
