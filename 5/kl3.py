@@ -50,6 +50,13 @@ class Orzel(Ptak):
         print("kier kier kir")
 
 
+# TypeError: Can't instantiate abstract class Sowa without an implementation for abstract method 'wydaj_odglos'
+class Sowa(Ptak):
+    """
+    Klasa Sowa
+    """
+
+
 # Po oznaczeniu klasy jako abstrakcyjna nie da się stworzyc obiektu tej klasy
 # TypeError: Can't instantiate abstract class Ptak without an implementation for abstract method 'wydaj_odglos'
 # or1 = Ptak("Orzel", 45)
@@ -80,3 +87,7 @@ for i in lista:
     i.wydaj_odglos()
 # ko ko ko ko ko ko
 # kier kier kir
+
+# klasa Sowa nie ma metody wydaj_odglos()
+# TypeError: Can't instantiate abstract class Sowa without an implementation for abstract method 'wydaj_odglos'
+# sowa = Sowa("Sowa", 10)
