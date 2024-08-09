@@ -11,7 +11,7 @@ try:
     c = conn.cursor()
     print("Baza zostala podłączona")
 except sqlite3.Error as e:
-    print("Bładd bazy danych", e)
+    print("Bład bazy danych", e)
 finally:
     if conn:
         conn.close()
